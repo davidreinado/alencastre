@@ -1,0 +1,124 @@
+//FONTS
+$first-font: "Montserrat", sans-serif;
+$second-font: "Open Sans", sans-serif;
+
+//COLORS
+$white: #fff;
+$light-purple: #88a4ec;
+$strong-purple: #4772dd;
+$light-blue: #3362d8;
+$orange: #dd7f11;
+$dark-grey: #4f4f4f;
+
+html,
+body {
+  font-size: 62.5%;
+  background: linear-gradient(246.8deg, $light-purple 0%, $light-blue 100%);
+}
+
+h1,
+h2,
+h3,
+p,
+button,
+input,
+li {
+  font-family: $first-font;
+  font-style: normal;
+  color: $white;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 5.4rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+input {
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: $light-purple;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input::placeholder {
+  color: $light-purple;
+}
+
+button {
+  font-weight: 400;
+  font-size: 1.8rem;
+  border: 0.2rem solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.7rem;
+  background: none;
+  line-height: 3rem;
+  padding: 0 1rem 0 1rem;
+
+  i {
+    font-size: 1.6rem;
+    padding: 0 0 0 1rem;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
+
+li {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.wrapper:first-child {
+  margin: auto;
+  width: 75%;
+}
+
+.wrapper:last-child {
+  margin: auto;
+  width: 85%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: calc(25% + 0.4vw);
+  }
+
+  .wrapper:first-child {
+    margin: auto;
+    width: 85%;
+  }
+
+  .wrapper:last-child {
+    margin: auto;
+    width: 90%;
+  }
+}

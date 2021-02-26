@@ -1,0 +1,53 @@
+.mainDescription {
+  h1 {
+    height: 24vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  h2 {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    .descriptionCard {
+      width: 24vw;
+      margin: 0 3vh 0 0;
+      h3 {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+      }
+      p {
+        min-height: 90vh;
+        display: flex;
+        align-items: flex-start;
+      }
+      button {
+        height: 6vh;
+        cursor: pointer;
+        padding: 0 1.6rem 0 1.6rem;
+        margin-top: 1.6rem;
+
+        svg {
+          margin-left: 1vh;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .cards {
+      flex-direction: column;
+      .descriptionCard {
+        min-width: 80vw;
+        p {
+          min-height: 10vh;
+        }
+      }
+    }
+  }
+}

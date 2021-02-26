@@ -1,0 +1,570 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  background: linear-gradient(246.8deg, #88a4ec 0%, #3362d8 100%);
+}
+
+h1,
+h2,
+h3,
+p,
+button,
+input,
+li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 5.4rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+input {
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: #88a4ec;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #88a4ec;
+}
+
+input:-ms-input-placeholder {
+  color: #88a4ec;
+}
+
+input::-ms-input-placeholder {
+  color: #88a4ec;
+}
+
+input::placeholder {
+  color: #88a4ec;
+}
+
+button {
+  font-weight: 400;
+  font-size: 1.8rem;
+  border: 0.2rem solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.7rem;
+  background: none;
+  line-height: 3rem;
+  padding: 0 1rem 0 1rem;
+}
+
+button i {
+  font-size: 1.6rem;
+  padding: 0 0 0 1rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+li {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.wrapper:first-child {
+  margin: auto;
+  width: 75%;
+}
+
+.wrapper:last-child {
+  margin: auto;
+  width: 85%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: calc(25% + 0.4vw);
+  }
+  .wrapper:first-child {
+    margin: auto;
+    width: 85%;
+  }
+  .wrapper:last-child {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+.mainDescription h1 {
+  height: 24vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mainDescription h2 {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainDescription .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainDescription .cards .descriptionCard {
+  width: 24vw;
+  margin: 0 3vh 0 0;
+}
+
+.mainDescription .cards .descriptionCard h3 {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainDescription .cards .descriptionCard p {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainDescription .cards .descriptionCard button {
+  height: 6vh;
+  cursor: pointer;
+  padding: 0 1.6rem 0 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.mainDescription .cards .descriptionCard button svg {
+  margin-left: 1vh;
+}
+
+@media (max-width: 1024px) {
+  .mainDescription .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainDescription .cards .descriptionCard {
+    min-width: 80vw;
+  }
+  .mainDescription .cards .descriptionCard p {
+    min-height: 10vh;
+  }
+}
+
+.searchModule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.searchModule .searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 20vh;
+}
+
+.searchModule .searchForm button {
+  height: 12vh;
+  width: 10vw;
+  border: none;
+  background: #fff;
+  color: #88a4ec;
+  border-radius: 20px 0 0 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.searchModule .searchForm button i {
+  font-size: 5rem;
+  padding: 0 2vw 0 2vw;
+  border-right: 1px solid #88a4ec;
+}
+
+.searchModule .searchForm input {
+  height: 12vh;
+  padding-left: 2vw;
+  min-width: 50vw;
+  border-radius: 0 20px 20px 0px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 71px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 71px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .searchModule .searchForm input {
+    min-width: 85vw;
+  }
+}
+
+.results {
+  height: 260vh;
+  width: 55vw;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 71px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 71px rgba(0, 0, 0, 0.25);
+  margin-bottom: 8vh;
+  border-radius: 0 0 20px 20px;
+}
+
+.results h1 {
+  font-size: 4rem;
+}
+
+.results h1,
+.results li,
+.results svg {
+  color: #4772dd;
+}
+
+.results p {
+  color: #4f4f4f;
+}
+
+.results .cityComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2vw;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.results .cityComponent h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 2vw;
+}
+
+.results .cityComponent svg {
+  font-size: 1.8rem;
+}
+
+.results .cityComponent p {
+  font-size: 1.6rem;
+  padding-left: 0.5vh;
+}
+
+.results .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh;
+  border-bottom: 0.4px solid rgba(136, 164, 236, 0.3);
+  opacity: 0.7;
+}
+
+.results .day .dateComponent {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.results .day .dateComponent p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.results .day .dateComponent h1 {
+  font-size: 3rem;
+}
+
+.results .day .weatherComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 4vw;
+}
+
+.results .day .weatherComponent svg {
+  font-size: 8rem;
+  margin-right: 1vw;
+}
+
+.results .day .weatherComponent h1 {
+  font-size: 12rem;
+  margin-left: 1vw;
+  color: #4f4f4f;
+}
+
+.results .day .detailComponent ul {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.results .day .detailComponent ul li {
+  color: #4f4f4f;
+}
+
+.results .day .detailComponent ul li svg {
+  margin-right: 0.5vw;
+}
+
+.results .day:first-of-type {
+  background: #f2f2f2;
+  -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.results .day:first-of-type h1,
+.results .day:first-of-type svg {
+  color: #dd7f11;
+}
+
+.results .day:first-of-type p,
+.results .day:first-of-type li {
+  color: #4f4f4f;
+}
+
+.results .day:first-of-type .weatherComponent {
+  padding-left: 0vw;
+}
+
+.results .day:first-of-type .weatherComponent h1 {
+  color: #4f4f4f;
+}
+
+@media (max-width: 1024px) {
+  .results {
+    min-width: 80vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */
